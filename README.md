@@ -23,6 +23,10 @@ AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、
 2. `pip install -r requirements.txt`
 3. 各モジュールを個別に実行 or スケジューラと連携して実行
 
+## 📸 スクリーンショット
+
+![AI秘書スクリーンショット](操作確認画面)
+
 ## 🚀 今後の開発予定
 
 - Slackとの連携
