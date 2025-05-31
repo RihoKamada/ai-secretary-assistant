@@ -26,7 +26,7 @@ AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、
 ## 📸 スクリーンショット
 <img width="1050" alt="操作確認画面" src="https://github.com/user-attachments/assets/f7b2a832-af8f-4edf-8e71-a1e149c67418" />
 
-![AI秘書スクリーンショット](操作確認画面)
+![AI秘書スクリーンショット]操作確認画面
 
 
 ## 🚀 今後の開発予定
