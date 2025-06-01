@@ -23,6 +23,28 @@ AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、
 2. `pip install -r requirements.txt`
 3. 各モジュールを個別に実行 or スケジューラと連携して実行
 
+4. 🧪 使い方
+このプロジェクトは、PDFファイルを読み込んで、自然言語の質問に答えるAIアシスタントです。以下の手順で実行できます：
+
+1. PDFファイルの準備
+sample.pdf のように任意のPDFファイルを temp-ai-secretary/ フォルダ内に保存してください。
+
+2. Embedding とベクトルデータの作成
+bash
+コピーする
+編集する
+python pdf_qa_setup.py
+これはPDFを読み取り、FAISSインデックスとして保存します。
+
+3. 質問に答えさせる
+bash
+コピーする
+編集する
+python pdf_qa.py
+実行後、質問を入力するとAIがPDFの内容から回答を返します。
+
+
+
 ## 📸 スクリーンショット
 <img width="1050" alt="操作確認画面" src="https://github.com/user-attachments/assets/f7b2a832-af8f-4edf-8e71-a1e149c67418" />
 
