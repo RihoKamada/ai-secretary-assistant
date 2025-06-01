@@ -63,10 +63,10 @@ pdf-qa-system/
 
 
 ---
-## 🔍 開発状況
 
 プロジェクトの進行状況は GitHub Projects で確認できます：  
 👉 [AI Secretary Assistant 開発ボード](https://github.com/RihoKamada/ai-secretary-assistant/projects/1)
+
 ---
 
 ## 🙋‍♀️ 開発者
