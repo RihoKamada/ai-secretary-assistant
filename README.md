@@ -19,33 +19,17 @@ PDF QA System は、PDF ファイルを読み込んで、自然言語での質�
 
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-markdown
-コピーする
-編集する
-
 2. 必要なパッケージをインストール：
 
 pip install -r requirements.txt
-
-markdown
-コピーする
-編集する
 
 3. FAISSインデックスの作成（初回のみ）：
 
 python pdf_qa_setup.py
 
-markdown
-コピーする
-編集する
-
 4. 質問を実行：
 
 python pdf_qa.py
-
-yaml
-コピーする
-編集する
 
 ---
 
