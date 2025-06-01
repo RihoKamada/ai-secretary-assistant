@@ -19,34 +19,31 @@ AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、
 
 ## 🛠 セットアップ方法
 
-1. `.env` に必要なAPIキー・シークレットを設定
-2. `pip install -r requirements.txt`
-3. 各モジュールを個別に実行 or スケジューラと連携して実行
-
 ## 🧪 使い方
 
 1. ターミナルでプロジェクトのディレクトリに移動：
 
-```bash
 cd temp-ai-secretary
-PDF質問応答システムを起動：
 
-bash
+markdown
 コピーする
 編集する
+
+2. PDF質問応答システムを起動：
+
 python pdf_qa.py
-実行後に質問を入力：
 
-text
+markdown
 コピーする
 編集する
+
+3. 実行後に質問を入力：
+
 📦 FAISSインデックスを読み込んでいます...
 ❓ 質問を入力してください：
-> この制度の目的は？
+
+この制度の目的は？
 💬 回答：この制度の目的は、意思決定の透明性や公正性を確保し、行政処分の適正性を促進することを目的としています。
-
-
-
 ## 📸 スクリーンショット
 <img width="1050" alt="操作確認画面" src="https://github.com/user-attachments/assets/f7b2a832-af8f-4edf-8e71-a1e149c67418" />
 
