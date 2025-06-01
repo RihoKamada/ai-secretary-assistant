@@ -56,10 +56,6 @@ yaml
 💬 回答：
 この制度の目的は、意思決定の透明性や公正性を確保し、行政処分の適正性を促進することを目的としています。
 
-yaml
-コピーする
-編集する
-
 ---
 
 ## 📁 ディレクトリ構成
@@ -74,20 +70,13 @@ pdf-qa-system/
 ├── .env # OpenAIキーなど（git管理対象外）
 └── README.md # このファイル
 
-yaml
-コピーする
-編集する
-
 ---
 
 ## 🖼️ スクリーンショット
 
 ### 📌 実行画面の例
+<img width="1050" alt="操作確認画面" src="https://github.com/user-attachments/assets/76db380a-356e-44f2-be9d-2f0134997225" />
 
-![実行例1](https://github.com/RihoKamada/ai-secretary-assistant/assets/your-image-id1)  
-![実行例2](https://github.com/RihoKamada/ai-secretary-assistant/assets/your-image-id2)
-
-※画像リンクは、GitHub の編集画面にスクリーンショットをドラッグ＆ドロップすると生成される URL に差し替えてください。
 
 ---
 
