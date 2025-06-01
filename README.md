@@ -1,86 +1,101 @@
 # AI Secretary Assistant 🤖📋
 
-AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、予定の要約・メール対応・通知を自動化するAIアシスタントです。
+AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、予定の要約・メール対応・通知を自動化する AI アシスタントです。
 
-## ✨ 機能
+---
 
-- 📆 Googleカレンダーの予定取得・要約
-- 📧 Gmailの受信メール要約・返信文自動生成
-- 💬 LINE Messaging APIを通じたプッシュ通知
-- 🗂 顧客対応履歴の管理（Google Sheetsと連携）
+## ✨ 主な機能
+
+- 📆 **Googleカレンダーの予定取得・要約**
+- 📧 **Gmailの受信メール要約・返信文の自動生成**
+- 💬 **LINE Messaging API によるプッシュ通知**
+- 🗂 **Google Sheets を使った顧客対応履歴の管理**
+- 📄 **PDFドキュメントに対する質問応答（RAG構成）**
+
+---
 
 ## 🔧 技術スタック
 
 - Python 3.x
-- OpenAI GPT API
-- Google API (Calendar, Gmail, Docs, Sheets)
+- OpenAI GPT API（ChatGPT）
+- Google API（Calendar / Gmail / Docs / Sheets）
 - LINE Messaging API
-- Flask / FastAPI（※今後追加予定）
+- LangChain / FAISS / PyPDF2 / dotenv
+- Flask または FastAPI（※今後追加予定）
 
-## 🛠 セットアップ方法
+---
 
-## 🧪 使い方
+## 🛠 セットアップ手順
 
-1. ターミナルでプロジェクトのディレクトリに移動：
+1. プロジェクトディレクトリ直下に `.env` ファイルを作成し、以下を記述します：
 
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+go
+コピーする
+編集する
+
+2. 必要なパッケージをインストール：
+
+```bash
+pip install -r requirements.txt
+FAISSインデックスを初回のみ構築（PDF読み込み処理）：
+
+bash
+コピーする
+編集する
+python pdf_qa_setup.py
+🧪 使い方
+ターミナルでプロジェクトのディレクトリに移動：
+
+bash
+コピーする
+編集する
 cd temp-ai-secretary
+PDF質問応答システムを起動：
 
-markdown
+bash
 コピーする
 編集する
-
-2. PDF質問応答システムを起動：
-
 python pdf_qa.py
+実行後に質問を入力：
 
-markdown
+text
 コピーする
 編集する
-
-3. 実行後に質問を入力：
-
 📦 FAISSインデックスを読み込んでいます...
 ❓ 質問を入力してください：
+> この制度の目的は？
 
-この制度の目的は？
 💬 回答：この制度の目的は、意思決定の透明性や公正性を確保し、行政処分の適正性を促進することを目的としています。
-## 📸 スクリーンショット
-<img width="1050" alt="操作確認画面" src="https://github.com/user-attachments/assets/f7b2a832-af8f-4edf-8e71-a1e149c67418" />
-
-!AI秘書スクリーンショット 操作確認画面
-
-
-## 🚀 今後の開発予定
-
-- Slackとの連携
-- より自然な会話型応答の導入
-- Notionへの議事録転送
-
----
-
-## 📂 ディレクトリ構成（例）
-
-temp-ai-secretary/
-├── main.py
-├── gmail_summary.py
-├── calendar_summary.py
-├── line_push.py
-├── token.json
-├── credentials.json（※.gitignore推奨）
-├── README.md
-
-yaml
+📂 ディレクトリ構成（例）
+bash
 コピーする
 編集する
+temp-ai-secretary/
+├── pdf_qa.py                # 質問応答のメインファイル
+├── pdf_qa_setup.py          # PDF読み込み・ベクトル化
+├── pdf_reader.py            # PDF → テキスト変換処理
+├── samplePDF.pdf            # 使用するPDFサンプル
+├── .env                     # APIキーなど（※.gitignore推奨）
+├── credentials.json         # Google API認証ファイル（※.gitignore推奨）
+├── requirements.txt
+└── README.md
+🚀 今後の開発予定
+Slackとの連携による通知受信・返信機能
 
----
+NotionやGoogle Docsへの自動議事録転送
 
-## 🙋‍♀️ 開発者
+LINE Botからの会話型応答
 
-Riho Kamada（[@riho_dev](https://github.com/RihoKamada)）
+音声入力対応
 
----
+🙋‍♀️ 開発者
+Riho Kamada（@riho_dev）
 
-## 📝 ライセンス
+フリーランス / AI × 自動化ツール開発学習中
 
-MIT License# AI Secretary Assistant
+お問い合わせ・ご相談は GitHub Issues まで📮
+
+📝 ライセンス
+MIT License
