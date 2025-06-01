@@ -23,7 +23,7 @@ AI Secretary Assistant は、Googleカレンダー・Gmail・LINEを活用し、
 2. `pip install -r requirements.txt`
 3. 各モジュールを個別に実行 or スケジューラと連携して実行
 
-4. 🧪 使い方
+## 🧪 使い方
 このプロジェクトは、PDFファイルを読み込んで、自然言語の質問に答えるAIアシスタントです。以下の手順で実行できます：
 
 1. PDFファイルの準備
